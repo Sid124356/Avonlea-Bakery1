@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (lactoseCheckbox.checked) {
-            const lactoseItems = document.querySelectorAll('.cold-drinks ul li[id="lactose"], .hot-drinks ul li[id="lactose"]');
+            const lactoseItems = document.querySelectorAll('.cold-drinks ul li[id="lactose"], .hot-drinks ul li[class="lactose"]');
             lactoseItems.forEach(item => item.style.display = 'none');
         } else {
-            const allItems = document.querySelectorAll('.cold-drinks ul li[id="lactose"], .hot-drinks ul li[id="lactose"]');
+            const allItems = document.querySelectorAll('.cold-drinks ul li[id="lactose"], .hot-drinks ul li[class="lactose"]');
             allItems.forEach(item => item.style.display = 'block');
         }
 

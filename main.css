@@ -1,0 +1,264 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+    margin: 0;
+    background-color: #e5e0d3;
+    color: #6d835a;
+}
+
+.nav-bar {
+    grid-column: 1;
+    padding: 1em;
+    background-color: #6d835a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: #ffbf73;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-bar a:hover {
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.nav-bar img {
+    max-height: 100%;
+    margin-right: 10px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.nav-bar nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-bar nav a {
+    text-align: center;
+    flex: 1; 
+}
+
+.text-content {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #e5e0d3;
+    padding-bottom: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.text-content h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6d835a;
+}
+
+.text-content a {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6d835a;
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    background-color: #ffbf73;
+    opacity: 0.7;
+}
+.cookies {
+    display: flex;
+    align-items: center;
+    background-color: #6d835a;
+    padding: 50px;
+    position: relative;
+}
+
+.cookies p {
+    color: white;
+    font-weight: bold;
+    font-size: 90pt;
+    margin-right: 20px;
+    text-align: left; 
+    line-height: 1.5;
+    flex: 1; 
+}
+
+.cookies p span {
+    display: block;
+}
+
+.cookies p span:first-child {
+    margin-bottom: 40px;
+}
+
+.cookies p span:last-child {
+    margin-top: 40px;
+}
+
+.cookies img {
+    width: 280px;
+    height: auto;
+    margin-right: 20px; 
+}
+.loaf {
+    display: flex;
+    align-items: center; 
+    background-color: #e5e0d3;
+    padding: 50px;
+}
+
+.loaf-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.loaf-content img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.loaf-content p {
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 100pt;
+    flex: 1;
+}
+.loaf-content p span {
+    display: block;
+}
+
+.footer {
+    grid-column: 1;
+    height: auto;
+    background-color: #6d835a;
+    text-align: center;
+    align-items: center;
+    font-family: 'Borgia Text', serif; 
+    padding: 20px;
+}
+
+.footer p {
+    color: #e5e0d3 ;
+}
+
+.footer a {
+    color: #e5e0d3;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.footer a:hover {
+    color: #ffbf73; 
+}
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        padding: 0.5em;
+    }
+
+    .nav-bar a {
+        margin: 0 5px;
+    }
+
+    .text-content h1 {
+        font-size: 3em;
+    }
+
+    .text-content a {
+        font-size: 1em;
+    }
+
+    .cookies,
+    .loaf {
+        padding: 20px;
+    }
+
+    .cookies p,
+    .loaf p {
+        font-size: 30pt;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+    .loaf-content img {
+        max-width: 73%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .nav-bar a {
+        margin: 0 8px;
+    }
+
+    .text-content h1 {
+        font-size: 3.5em;
+    }
+
+    .text-content a {
+        font-size: 1.2em;
+    }
+
+    .cookies,
+    .loaf {
+        padding: 30px;
+    }
+
+    .cookies p,
+    .loaf p {
+        font-size: 40pt;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 1001px) {
+    .nav-bar a {
+        margin: 0 12px;
+    }
+
+    .text-content h1 {
+        font-size: 4.5em;
+    }
+
+    .text-content a {
+        font-size: 1.5em;
+    }
+
+    .cookies,
+    .loaf {
+        padding: 50px;
+    }
+
+    .cookies p,
+    .loaf p {
+        font-size: 50pt;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+}
+

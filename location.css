@@ -1,0 +1,221 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e5e0d3;
+}
+
+.nav-bar {
+    grid-column: 1;
+    padding: 1em;
+    background-color: #6d835a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    color: #ffbf73;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-bar a:hover {
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.nav-bar img {
+    max-height: 100%;
+    margin-right: 10px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.hour-locantion-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #e5e0d3;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.hour-locantion-content h1 {
+    color: #6d835a;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.hour-locantion-content p {
+    text-align: center;
+    color: #6d835a;
+    margin-bottom: 10px; 
+}
+
+.hour-locantion-content hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #6d835a;
+}
+
+.hour-locantion-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.hour-locantion-content ul li {
+    color: #6d835a;
+}
+
+.hour-locantion-content ul ul {
+    margin-left: 20px;
+}
+
+.hour-locantion-content ul ul li {
+    color: #6d835a;
+}
+
+.hour-locantion-content ul ul li p {
+    margin: 0;
+}
+
+.explore-Charlottetown {
+    flex: 1;
+    padding: 20px;
+    background-color: #e5e0d3;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-Charlottetown p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30pt;
+    color: #6d835a;
+}
+
+.explore-Charlottetown iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.footer {
+    grid-column: 1;
+    height: auto;
+    background-color: #6d835a;
+    text-align: center;
+    align-items: center;
+    font-family: 'Borgia Text', serif;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer p {
+    color: #e5e0d3;
+}
+
+.footer a {
+    color: #e5e0d3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffbf73;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-bar > a {
+    font-weight: bold;
+}
+
+.main-header + div {
+    margin-top: 20px;
+}
+
+.hour-locantion-content p + p {
+    margin-top: 10px;
+}
+
+a[href^="http"] {
+    color: #e5e0d3;
+}
+
+.nav-bar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        padding: 0.5em;
+    }
+
+    .nav-bar a {
+        margin: 0 8px;
+    }
+
+    .hour-locantion-content {
+        max-width: 100%; 
+    }
+
+    .explore-Charlottetown {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .nav-bar {
+        padding: 0.5em;
+    }
+
+    .nav-bar a {
+        margin: 0 8px;
+    }
+
+    .hour-locantion-content {
+        max-width: 600px; 
+    }
+
+    .explore-Charlottetown {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .nav-bar a {
+        margin: 0 12px;
+    }
+}
